@@ -1,0 +1,13 @@
+{
+  "name": "ADC Connect",
+  "description": "The official digital membership and registration platform for the African Democratic Congress (ADC), featuring a modern, secure, and user-friendly experience.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "Membership Registration",
+    "Digital ID Card Generation",
+    "Secure Authentication",
+    "Real-time Data Validation"
+  ]
+}
