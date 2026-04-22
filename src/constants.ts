@@ -7,8 +7,8 @@ export const NIGERIAN_STATES = [
 ];
 
 export const APP_CONFIG = {
-  name: 'ADC Connect',
-  tagline: 'Empowering the Nigerian People',
+  name: 'OneNation Party',
+  tagline: 'Leading the New Nigeria',
   primaryColor: '#008751',
   secondaryColor: '#FFFFFF',
 };

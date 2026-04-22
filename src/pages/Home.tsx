@@ -50,7 +50,7 @@ export function Home() {
                 transition={{ delay: 0.1 }}
                 className="text-white/80 text-xl leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0"
               >
-                Join the third largest political party in Nigeria. Be part of the change that prioritizes transparency, youth inclusion, and ethical leadership.
+                Join the most progressive political party in Nigeria. Be part of the change that prioritizes transparency, youth inclusion, and ethical leadership.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -96,8 +96,8 @@ export function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-4">The ADC Advantage</h2>
-            <p className="text-4xl font-bold text-gray-900 tracking-tight">Why Register with ADC?</p>
+            <h2 className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-4">The OneNation Advantage</h2>
+            <p className="text-4xl font-bold text-gray-900 tracking-tight">Why Register with OneNation Party?</p>
           </div>
 
           <motion.div
@@ -154,7 +154,7 @@ export function Home() {
                 {[
                   { step: '01', title: 'Fill Bio-Data', text: 'Provide your basic information and upload your passport photograph.' },
                   { step: '02', title: 'Select Location', text: 'Enter your State, LGA, Ward, and Polling Unit details for local representation.' },
-                  { step: '03', title: 'Generate ID', text: 'Verify your identity and download your official ADC Digital ID Card.' }
+                  { step: '03', title: 'Generate ID', text: 'Verify your identity and download your official OneNation Digital ID Card.' }
                 ].map((step, i) => (
                   <div key={i} className="flex gap-6 group">
                     <div className="text-emerald-600 font-bold text-xl opacity-30 group-hover:opacity-100 transition-opacity">
@@ -198,7 +198,7 @@ export function Home() {
                   <CheckCircle className="w-8 h-8 text-white" />
                 </div>
                 <div className="mt-6 pt-6 border-t border-white/20 flex justify-between items-center">
-                  <span className="text-xs font-mono uppercase tracking-widest opacity-60">ID: ADC-2026-NGR-001</span>
+                  <span className="text-xs font-mono uppercase tracking-widest opacity-60">ID: ONP-2026-NGR-001</span>
                 </div>
               </div>
             </div>

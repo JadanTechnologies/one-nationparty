@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 export function AIChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'bot'; text: string }[]>([
-    { role: 'bot', text: 'Hello! I am the ADC Digital Assistant. How can I help you today?' }
+    { role: 'bot', text: 'Hello! I am the OneNation Digital Assistant. How can I help you today?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -44,7 +44,7 @@ export function AIChat() {
                   <Bot className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm">ADC Assistant</h4>
+                  <h4 className="font-bold text-sm">OneNation Assistant</h4>
                   <p className="text-[10px] opacity-80 uppercase tracking-widest font-bold">Online</p>
                 </div>
               </div>

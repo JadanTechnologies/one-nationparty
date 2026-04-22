@@ -62,7 +62,7 @@ export function Dashboard() {
       <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Admin Dashboard</h1>
-          <p className="text-gray-500">Real-time statistics for ADC membership registration</p>
+          <p className="text-gray-500">Real-time statistics for OneNation Party membership registration</p>
         </div>
         <div className="flex items-center gap-3">
           <Button variant="outline" className="rounded-xl h-12">Export Data</Button>

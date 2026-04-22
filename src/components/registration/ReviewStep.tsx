@@ -66,9 +66,9 @@ export function ReviewStep() {
         </div>
       </div>
 
-      <div className="bg-amber-50 p-6 rounded-2xl border border-amber-100">
-        <p className="text-sm text-amber-800 leading-relaxed text-center italic">
-          "By submitting this form, I affirm that the information provided is accurate and I pledge my loyalty to the principles and manifesto of the African Democratic Congress."
+      <div className="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+        <p className="text-sm text-emerald-800 leading-relaxed text-center italic">
+          "By submitting this form, I affirm that the information provided is accurate and I pledge my loyalty to the principles and manifesto of the OneNation Party."
         </p>
       </div>
     </div>

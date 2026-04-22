@@ -22,10 +22,10 @@ export default function About() {
             The Movement
           </motion.div>
           <h1 className="text-5xl lg:text-7xl font-black text-gray-900 tracking-tight leading-none mb-8">
-            About <span className="text-[#058541]">ADC</span> Nigeria
+            About <span className="text-[#058541]">OneNation</span> Party
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded on the pillars of ethics and integrity, the African Democratic Congress is the third largest political party in Nigeria, dedicated to providing a credible alternative for patriots.
+            Founded on the pillars of unity and progress, the OneNation Party is a modern political movement in Nigeria, dedicated to providing a credible alternative for patriots and building a nation that works for all.
           </p>
         </div>
       </section>

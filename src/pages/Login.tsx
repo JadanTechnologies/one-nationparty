@@ -28,14 +28,14 @@ export default function Login() {
           >
             <div className="flex items-center space-x-3 mb-8">
               <div className="w-12 h-12 bg-[#058541] rounded-2xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-emerald-500/20">
-                A
+                O
               </div>
               <h2 className="text-2xl font-black text-gray-900 tracking-tight">Portal Access</h2>
             </div>
             
             <h2 className="text-3xl font-black text-gray-900 tracking-tight">Welcome Back</h2>
             <p className="mt-2 text-sm text-gray-500 font-medium">
-              Log in to manage your ADC membership and access digital resources.
+              Log in to manage your OneNation membership and access digital resources.
             </p>
           </motion.div>
 
@@ -109,13 +109,13 @@ export default function Login() {
           >
             <div className="w-16 h-1 bg-[#e31e24] mb-8" />
             <h3 className="text-4xl font-black text-white leading-tight mb-6">
-              "We are the third force. The voice of the people, the hope for a new Nigeria."
+              "We are the future. The voice of the people, the hope for a new Nigeria."
             </h3>
             <div className="flex items-center space-x-4">
               <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-md">
                 <Shield className="text-emerald-400 w-5 h-5" />
               </div>
-              <p className="text-emerald-100 font-bold uppercase tracking-widest text-xs">ADC Leadership Council</p>
+              <p className="text-emerald-100 font-bold uppercase tracking-widest text-xs">OneNation Leadership Council</p>
             </div>
           </motion.div>
         </div>

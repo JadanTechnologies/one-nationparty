@@ -22,7 +22,7 @@ export function DigitalIDCard({ data }: DigitalIDCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const backCardRef = useRef<HTMLDivElement>(null);
 
-  const qrValue = `https://adcregistration.ng/verify/${data.membershipId}`;
+  const qrValue = `https://onenation.ng/verify/${data.membershipId}`;
   const membershipType = data.membershipType || 'Member';
 
   const downloadCard = async () => {
@@ -32,14 +32,14 @@ export function DigitalIDCard({ data }: DigitalIDCardProps) {
       // Download Front
       const frontDataUrl = await toPng(cardRef.current, { cacheBust: true, quality: 1, pixelRatio: 2 });
       const frontLink = document.createElement('a');
-      frontLink.download = `ADC-ID-FRONT-${data.membershipId}.png`;
+      frontLink.download = `ONP-ID-FRONT-${data.membershipId}.png`;
       frontLink.href = frontDataUrl;
       frontLink.click();
 
       // Download Back
       const backDataUrl = await toPng(backCardRef.current, { cacheBust: true, quality: 1, pixelRatio: 2 });
       const backLink = document.createElement('a');
-      backLink.download = `ADC-ID-BACK-${data.membershipId}.png`;
+      backLink.download = `ONP-ID-BACK-${data.membershipId}.png`;
       backLink.href = backDataUrl;
       backLink.click();
     } catch (err) {
@@ -80,10 +80,10 @@ export function DigitalIDCard({ data }: DigitalIDCardProps) {
               <div className="flex justify-between items-start">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1 shadow-xl">
-                    <div className="w-full h-full bg-[#058541] rounded-full flex items-center justify-center text-white font-black text-[10px]">ADC</div>
+                    <div className="w-full h-full bg-[#058541] rounded-full flex items-center justify-center text-white font-black text-[10px]">ONP</div>
                   </div>
                   <div className="leading-tight">
-                    <h2 className="text-sm font-black tracking-tight text-white uppercase italic">African Democratic Congress</h2>
+                    <h2 className="text-sm font-black tracking-tight text-white uppercase italic">OneNation Party</h2>
                     <div className="flex items-center space-x-2">
                       <span className="text-[9px] text-emerald-400 font-bold tracking-[0.2em] uppercase">e-Membership Card</span>
                       <span className="w-1 h-1 bg-emerald-500 rounded-full animate-pulse" />
@@ -170,11 +170,11 @@ export function DigitalIDCard({ data }: DigitalIDCardProps) {
               <div className="flex-grow space-y-4">
                 <div className="flex items-start space-x-3 text-[9px] leading-relaxed text-emerald-100/70">
                   <div className="mt-1 w-2 h-2 bg-emerald-500 rounded-full shrink-0" />
-                  <p>This card remains the property of the African Democratic Congress (ADC). It must be presented for all party screenings and conventions.</p>
+                  <p>This card remains the property of the OneNation Party. It must be presented for all party screenings and conventions.</p>
                 </div>
                 <div className="flex items-start space-x-3 text-[9px] leading-relaxed text-emerald-100/70">
                   <div className="mt-1 w-2 h-2 bg-emerald-500 rounded-full shrink-0" />
-                  <p>The holder is bound by the constitution of the ADC and our core values of Ethics, Integrity, and Patriotism.</p>
+                  <p>The holder is bound by the constitution of the OneNation Party and our core values of Unity, Progress, and Integrity.</p>
                 </div>
                 <div className="flex items-start space-x-3 text-[9px] leading-relaxed text-emerald-100/70">
                   <div className="mt-1 w-2 h-2 bg-emerald-500 rounded-full shrink-0" />
@@ -185,15 +185,15 @@ export function DigitalIDCard({ data }: DigitalIDCardProps) {
               <div className="mt-auto grid grid-cols-3 gap-2 px-4 py-3 bg-emerald-900/40 rounded-2xl border border-emerald-500/10">
                 <div className="flex flex-col items-center">
                   <Mail size={12} className="text-emerald-500 mb-1" />
-                  <p className="text-[8px] uppercase tracking-wider font-bold">hq@adc.ng</p>
+                  <p className="text-[8px] uppercase tracking-wider font-bold">hq@onenation.ng</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <Phone size={12} className="text-emerald-500 mb-1" />
-                  <p className="text-[8px] uppercase tracking-wider font-bold">+234 ADC 001</p>
+                  <p className="text-[8px] uppercase tracking-wider font-bold">+234 ONP 001</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <Globe size={12} className="text-emerald-500 mb-1" />
-                  <p className="text-[8px] uppercase tracking-wider font-bold">www.adc.ng</p>
+                  <p className="text-[8px] uppercase tracking-wider font-bold">www.onenation.ng</p>
                 </div>
               </div>
             </div>

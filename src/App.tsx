@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import About from './pages/About';
 import Manifesto from './pages/Manifesto';
 import News from './pages/News';
+import ConfirmEmail from './pages/ConfirmEmail';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="manifesto" element={<Manifesto />} />
           <Route path="news" element={<News />} />
           <Route path="login" element={<Login />} />
+          <Route path="confirm-email" element={<ConfirmEmail />} />
           <Route path="dashboard" element={<Dashboard />} />
         </Route>
       </Routes>

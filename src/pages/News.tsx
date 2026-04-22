@@ -3,7 +3,7 @@ import { FileText, Download, ShieldCheck, Gavel, Scale, Globe } from 'lucide-rea
 
 export default function Constitution() {
   const regions = [
-    { title: "Article I", subtitle: "Name & Supremacy", desc: "Establishing the African Democratic Congress as a legal entity and the supremacy of its constitution." },
+    { title: "Article I", subtitle: "Name & Supremacy", desc: "Establishing the OneNation Party as a legal entity and the supremacy of its constitution." },
     { title: "Article II", subtitle: "Motto & Flag", desc: "Detailed breakdown of the party's symbols: the star, the colors, and our guiding promise." },
     { title: "Article III", subtitle: "Membership Rights", desc: "The rights, privileges, and duties of every registered member from grassroots to national levels." },
     { title: "Article IV", subtitle: "National Organs", desc: "The structure of the party leadership including the NEC, Board of Trustees, and State Excos." },
@@ -22,7 +22,7 @@ export default function Constitution() {
                 The Party <span className="text-[#058541]">Constitution</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-xl leading-relaxed mb-10">
-                The fundamental laws governing the operations, ethics, and democratic processes within the African Democratic Congress (ADC).
+                The fundamental laws governing the operations, ethics, and democratic processes within the OneNation Party.
               </p>
               <div className="flex gap-4">
                 <button className="bg-[#058541] hover:bg-emerald-700 text-white px-8 h-14 rounded-xl font-bold flex items-center space-x-2 shadow-lg shadow-emerald-500/20">

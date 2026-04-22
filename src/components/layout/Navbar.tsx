@@ -15,11 +15,11 @@ export function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-[#058541] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-sm">
-                A
+                O
               </div>
               <div className="leading-none">
-                <h1 className="text-lg font-black text-gray-900 tracking-tight uppercase">ADC <span className="text-[#e31e24]">Nigeria</span></h1>
-                <p className="text-[10px] text-gray-500 font-bold tracking-widest uppercase">African Democratic Congress</p>
+                <h1 className="text-lg font-black text-gray-900 tracking-tight uppercase">OneNation <span className="text-[#e31e24]">Party</span></h1>
+                <p className="text-[10px] text-gray-500 font-bold tracking-widest uppercase">Building a New Nigeria</p>
               </div>
             </Link>
           </div>
@@ -58,9 +58,9 @@ export function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-6 space-y-2"
         >
-          <Link to="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">About ADC</Link>
+          <Link to="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">About Party</Link>
           <Link to="/manifesto" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Manifesto</Link>
-          <Link to="/news" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">News</Link>
+          <Link to="/news" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Constitution</Link>
           <div className="pt-4 flex flex-col space-y-2">
             <Link to="/login" className="w-full">
               <Button variant="outline" className="w-full justify-center">Login</Button>

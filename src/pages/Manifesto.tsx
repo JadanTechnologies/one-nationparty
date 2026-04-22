@@ -60,7 +60,7 @@ export default function Manifesto() {
           </div>
           <h2 className="text-4xl font-black text-gray-900 mb-6 uppercase tracking-tight">Read the Full document</h2>
           <p className="text-lg text-gray-500 mb-10 font-medium">
-            Download the comprehensive 120-page ADC Manifesto and understand our detailed policy frameworks for every sector of Nigerian life.
+            Download the comprehensive 120-page OneNation Manifesto and understand our detailed policy frameworks for every sector of Nigerian life.
           </p>
           <button className="bg-gray-900 hover:bg-black text-white px-12 py-5 rounded-2xl font-bold flex items-center mx-auto space-x-3 transition-colors shadow-xl">
             <span>Download PDF (4.2 MB)</span>

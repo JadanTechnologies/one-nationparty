@@ -6,10 +6,15 @@ export function Footer() {
     <footer className="bg-gray-950 border-t border-gray-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-[#058541] rounded-full flex items-center justify-center text-white font-bold text-sm">A</div>
-            <div className="text-xs text-gray-500 font-medium">
-              &copy; {new Date().getFullYear()} African Democratic Congress (ADC). All Rights Reserved.
+          <div className="flex flex-col space-y-2">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-[#058541] rounded-full flex items-center justify-center text-white font-bold text-sm">O</div>
+              <div className="text-xs text-gray-500 font-medium">
+                &copy; {new Date().getFullYear()} OneNation Party. All Rights Reserved.
+              </div>
+            </div>
+            <div className="text-[10px] text-gray-600 font-bold uppercase tracking-wider ml-11">
+              Developed By Jadan Tech Solution Nigeria Ltd
             </div>
           </div>
           

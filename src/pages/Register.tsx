@@ -94,11 +94,25 @@ export function Register() {
   };
 
   const [formData, setFormData] = useState<any>(null);
+  const [isSendingEmail, setIsSendingEmail] = useState(false);
 
-  const handleSubmit = (data: RegistrationFormData) => {
+  const handleSubmit = async (data: RegistrationFormData) => {
     console.log('Final Data:', data);
     setFormData(data);
-    setIsCompleted(true);
+    setIsSendingEmail(true);
+    
+    try {
+      await fetch('/api/send-confirmation', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: data.email, fullName: data.fullName }),
+      });
+    } catch (error) {
+      console.error('Failed to send confirmation email:', error);
+    } finally {
+      setIsSendingEmail(false);
+      setIsCompleted(true);
+    }
   };
 
   const currentProgress = ((currentStep + 1) / STEPS.length) * 100;
@@ -115,9 +129,12 @@ export function Register() {
             <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto lg:mx-0 mb-8">
               <CheckCircle2 className="w-10 h-10 text-emerald-600" />
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">Welcome to ADC, <span className="text-emerald-600">{formData.fullName.split(' ')[0]}</span>!</h2>
-            <p className="text-gray-600 mb-10 leading-relaxed text-lg max-w-lg">
-              Your digital registration is complete. You are now a verified member of the African Democratic Congress. Your digital ID card is ready for use.
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 tracking-tight">Welcome to OneNation, <span className="text-emerald-600">{formData.fullName.split(' ')[0]}</span>!</h2>
+            <p className="text-gray-600 mb-6 leading-relaxed text-lg max-w-lg">
+              Your registration has been received. We've sent a <strong>confirmation link</strong> to <span className="text-emerald-600 font-bold">{formData.email}</span>.
+            </p>
+            <p className="text-gray-500 mb-10 leading-relaxed text-sm max-w-lg italic">
+              Please check your inbox (and spam folder) and click the link to activate your OneNation Party membership.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link to="/dashboard">
@@ -132,14 +149,14 @@ export function Register() {
             <DigitalIDCard 
               data={{
                 fullName: formData.fullName,
-                membershipId: `ADC-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`,
+                membershipId: `ONP-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`,
                 state: formData.state,
                 lga: formData.lga,
                 photoUrl: formData.passportUrl,
                 membershipType: formData.membershipType
               }}
             />
-            <p className="mt-8 text-xs text-gray-400 font-medium uppercase tracking-widest">Digital ID Preview (Front & Back)</p>
+            <p className="mt-8 text-xs text-gray-400 font-medium uppercase tracking-widest">Digital ID Preview (Status: Pending Confirmation)</p>
           </div>
         </motion.div>
       </div>
@@ -151,7 +168,7 @@ export function Register() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 tracking-tight mb-4">Join the Movement</h1>
-          <p className="text-gray-500 max-w-xl mx-auto">Complete the form below to become a registered member of the African Democratic Congress.</p>
+          <p className="text-gray-500 max-w-xl mx-auto">Complete the form below to become a registered member of the OneNation Party.</p>
         </div>
 
         {/* Step Indicator */}
