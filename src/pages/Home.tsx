@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Users, Layout, Shield, Zap, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card.tsx';
 
 const container = {
   hidden: { opacity: 0 },
